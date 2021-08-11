@@ -49,7 +49,7 @@ body{
 /* NAVBAR SECTION  --------------------------------------------------------------------------------------*/
 
 .navbar{
-    background-image: url(/elements/Navbar.png);
+    background-image: url(../elements/Navbar.png);
     max-width: 100%;                                    /*important to fix the horizontal scrollbar issue, that 100vw has*/
     height: 6.5rem; 
 }
