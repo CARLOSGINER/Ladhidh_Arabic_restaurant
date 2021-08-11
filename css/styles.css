@@ -2,23 +2,23 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(/fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
     font-family: rocksalt;
-    src: url(/fonts/RockSalt-Regular.ttf);
+    src: url(../fonts/RockSalt-Regular.ttf);
 }
 @font-face {
     font-family: worksans;
-    src: url(/fonts/WorkSans-Regular.ttf);
+    src: url(../fonts/WorkSans-Regular.ttf);
 }
 @font-face {
     font-family: jacques;
-    src: url(/fonts/JacquesFrancois-Regular.ttf);
+    src: url(../fonts/JacquesFrancois-Regular.ttf);
 }
 @font-face {
     font-family: raleway;
-    src: url(/fonts/Raleway-ExtraBold.ttf);
+    src: url(../fonts/Raleway-ExtraBold.ttf);
 }
 
 *{
@@ -130,25 +130,25 @@ body{
 
 .imgA{
     grid-area: imgA;
-    background-image: url(/img/kibbe\ 1-HERO.png);
+    background-image: url(../img/kibbe\ 1-HERO.png);
     background-size: cover;
 }
 
 .imgB{
     grid-area: imgB;
-    background-image: url(/img/shawarma01\ 1-HERO.png);
+    background-image: url(../img/shawarma01\ 1-HERO.png);
     background-size: cover;
 }
 
 .imgC{
     grid-area: imgC;
-    background-image: url(/img/shawarma01\ 1-HERO.png);
+    background-image: url(../img/shawarma01\ 1-HERO.png);
     background-size: cover;
 }
 
 .imgD{
     grid-area: imgD;
-    background-image: url(/img/garbanzo\ 1-HERO.png);
+    background-image: url(../img/garbanzo\ 1-HERO.png);
     background-size: cover;
 }
 
@@ -212,14 +212,14 @@ body{
 .woman-shawarma{
     width: 37.18rem;
     height: 34.68rem;
-    background-image: url(/img/[removal.ai]_tmp-60b0666665a9a.png);
+    background-image: url(../img/[removal.ai]_tmp-60b0666665a9a.png);
     position: absolute;
     left: 39.5rem;
     top: 11rem;
 }
 
 .menu-banner{
-    background-image: url(/elements/Menu-banner.png);
+    background-image: url(../elements/Menu-banner.png);
     width: 100vw; /*learning note 6*/
     max-width: 100%; /*to eliminate the horizontal scroll*/
     height: 18.5rem;
@@ -284,7 +284,7 @@ body{
  }
 
 .arrow{
-    background-image: url(/elements/arrow.png);
+    background-image: url(../elements/arrow.png);
     width: 132px;
     height: 66px;
     position: absolute;
@@ -293,7 +293,7 @@ body{
 }
 
  .photo{
-     background-image: url(/img/kibbe.jpg);
+     background-image: url(../img/kibbe.jpg);
      height: 283px;
      width: 283px;
      border-radius: 50%;
@@ -301,7 +301,7 @@ body{
      align-self: center;
  }
  .photo-A{
-    background-image: url(/img/pizza.jpg);
+    background-image: url(../img/pizza.jpg);
     width: 283px;
     border-radius: 50%;
     background-size: cover;
@@ -309,7 +309,7 @@ body{
     align-self: center;
 }
 .photo-B{
-    background-image: url(/img/tabaquitos.jpg);
+    background-image: url(../img/tabaquitos.jpg);
     width: 283px;
     border-radius: 50%;
     background-size: cover;
@@ -317,7 +317,7 @@ body{
     align-self: center;
 }
 .photo-C{
-    background-image: url(/img/garbanzo.jpg);
+    background-image: url(../img/garbanzo.jpg);
     width: 283px;
     border-radius: 50%;
     background-size: cover;
@@ -325,7 +325,7 @@ body{
     align-self: center;
 }
 .photo-D{
-    background-image: url(/img/shawarma01.jpg);
+    background-image: url(../img/shawarma01.jpg);
     width: 283px;
     border-radius: 50%;
     background-size: cover;
@@ -333,7 +333,7 @@ body{
     align-self: center;
 }
 .photo-E{
-    background-image: url(/img/Shawarma02.png);
+    background-image: url(../img/Shawarma02.png);
     width: 283px;
     height: 283px;
     align-self: center;
@@ -380,7 +380,7 @@ body{
  }
 
  .banner-contactos{
-     background-image: url(/elements/Contacto-banner.png);
+     background-image: url(../elements/Contacto-banner.png);
      width: 100vw;
      max-width: 100%;
      height: 301.56px;
@@ -427,14 +427,14 @@ body{
 .whatsapp-icon{
     width: 50px;
     height: 50px;
-    background-image: url(/elements/whatsapp-icon.svg);
+    background-image: url(../elements/whatsapp-icon.svg);
     align-self: center;
 }
 
 .gmail-icon{
     width: 50px;
     height: 50px;
-    background-image: url(/elements/gmail-icon.png);
+    background-image: url(../elements/gmail-icon.png);
     align-self: center;
 }
 
@@ -467,7 +467,7 @@ body{
 .shawarma-hand{
     width: 120px;
     height: 194px;
-    background-image: url(/elements/shawarma_hand.png);
+    background-image: url(../elements/shawarma_hand.png);
     position: absolute;
     top: 2550px;
     left: 120px;
@@ -479,7 +479,7 @@ body{
     position: absolute;
     top:2520px;
     left: 700px;
-    background-image: url(/img/Shawarma_girl2.png);
+    background-image: url(../img/Shawarma_girl2.png);
     background-size: cover;
     transform: rotate(-11deg);
     z-index: -1;
@@ -491,7 +491,7 @@ body{
     width: 100vw;
     max-width: 100%;
     height: 320px;
-    background-image: url(/elements/footer.png);
+    background-image: url(../elements/footer.png);
     position: absolute;
     top:2590px;
     z-index: -1;
@@ -537,7 +537,7 @@ body{
 }
 
 .instagram-icon{
-    background-image: url(/elements/iconmonstr-instagram-6\ 1.png);
+    background-image: url(../elements/iconmonstr-instagram-6\ 1.png);
     width: 50px;
     height: 50px;
     justify-self: center;
@@ -546,7 +546,7 @@ body{
 }
 
 .facebook-icon{
-    background-image: url(/elements/iconmonstr-facebook-6\ 1.png);
+    background-image: url(../elements/iconmonstr-facebook-6\ 1.png);
     width: 50px;
     height: 50px;
     justify-self: center;
@@ -555,7 +555,7 @@ body{
 }
 
 .twitter-icon{
-    background-image: url(/elements/iconmonstr-twitter-3\ 1.png);
+    background-image: url(../elements/iconmonstr-twitter-3\ 1.png);
     width: 50px;
     height: 50px;
     justify-self: center;
