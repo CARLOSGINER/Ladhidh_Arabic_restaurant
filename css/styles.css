@@ -1,0 +1,588 @@
+/* GENERAL ----------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: rocksalt;
+    src: url(/fonts/RockSalt-Regular.ttf);
+}
+@font-face {
+    font-family: worksans;
+    src: url(/fonts/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: jacques;
+    src: url(/fonts/JacquesFrancois-Regular.ttf);
+}
+@font-face {
+    font-family: raleway;
+    src: url(/fonts/Raleway-ExtraBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+a, a:visited, a:hover, a:active{
+    color: inherit;
+}
+
+:root{
+    --color-mainbrand:#5D0C1D;
+    --color-beige:#AC7645;
+    --color-grey:#E8E7E7;
+    font-size: 16px;                  /*1 rem */
+}
+
+body{
+    height: 2590px;
+}
+
+
+/* NAVBAR SECTION  --------------------------------------------------------------------------------------*/
+
+.navbar{
+    background-image: url(/elements/Navbar.png);
+    max-width: 100%;                                    /*important to fix the horizontal scrollbar issue, that 100vw has*/
+    height: 6.5rem; 
+}
+
+.navbar ul{
+    position: absolute;
+    left: 59rem;
+    margin-right: 2rem;
+} 
+
+.navbar ul li{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    font-family:roboto;
+    color: white;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(252, 190, 74, 0.603); /*notice that element "a" have the shape, 
+    but intentionally dont declare background color, so it doesnt appear until hover*/
+}
+
+
+.logo a{
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 0 0 45px;
+    margin-top: 14px;
+}
+
+
+.eslogan{
+    position: absolute;
+    font-family: rocksalt;
+    font-size: 18px;
+    color: white;
+    left: 220px;
+    top: 10px;
+}
+
+.navbar img{
+    position: absolute;
+    top:21px;
+    left:198px;
+}
+
+
+/* HERO SECTION ------------------------------------------------------------------------------------- */
+
+
+.images{
+    width:90vw;
+    height:620px;
+    position: absolute;                 
+    top:0px;
+    left:0px;
+    right: 0px;
+    padding-left: 5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: -1;
+
+    display: grid;
+    grid-template-columns: 39rem 18.5rem 18.5rem; /*learning note 2 */
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-areas: ". imgA imgB"
+                          ". imgC imgD";
+}
+
+.imgA{
+    grid-area: imgA;
+    background-image: url(/img/kibbe\ 1-HERO.png);
+    background-size: cover;
+}
+
+.imgB{
+    grid-area: imgB;
+    background-image: url(/img/shawarma01\ 1-HERO.png);
+    background-size: cover;
+}
+
+.imgC{
+    grid-area: imgC;
+    background-image: url(/img/shawarma01\ 1-HERO.png);
+    background-size: cover;
+}
+
+.imgD{
+    grid-area: imgD;
+    background-image: url(/img/garbanzo\ 1-HERO.png);
+    background-size: cover;
+}
+
+.titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .15rem;
+    color:var(--color-beige);
+    position: absolute;
+    top:10rem;
+    left: 5rem;
+
+}
+
+.p-hero{
+    width: 500px;
+    font-family: worksans;
+    font-size: 1.25rem;
+    position: absolute;
+    top:15rem;
+    left: 5rem;
+}
+
+.boton{
+    width: 15rem;
+    height: 3.8rem; /*learning note 3*/
+    line-height: 3.8rem; /*little trick to center text in div :)*/
+    background-color: var(--color-mainbrand);
+    border-radius: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left:5rem;
+    top:23rem;
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.5);
+    cursor: pointer; /*learning note 4*/
+
+    transition: all 0.3s ease-in-out; /*learning note 5*/
+}
+
+.boton:hover{
+    background-color: var(--color-beige);
+    color: var(--color-mainbrand);
+    box-shadow: 0px 1.5rem 3rem rgba(114, 3, 3, 0.5);
+    transform: translateY(-0.5rem);
+}
+
+.elipse-woman{
+    width: 37.18rem;
+    height: 34.94rem;
+    background-image: url(/elements/Elipse\ Hero.png);
+    position: absolute;
+    left: 42.6rem;
+    top: 10rem;
+}
+
+.woman-shawarma{
+    width: 37.18rem;
+    height: 34.68rem;
+    background-image: url(/img/[removal.ai]_tmp-60b0666665a9a.png);
+    position: absolute;
+    left: 39.5rem;
+    top: 11rem;
+}
+
+.menu-banner{
+    background-image: url(/elements/Menu-banner.png);
+    width: 100vw; /*learning note 6*/
+    max-width: 100%; /*to eliminate the horizontal scroll*/
+    height: 18.5rem;
+    position: absolute;
+    top: 32rem;
+}
+
+.menu-banner p{          /*learning note c3.2*/
+    font-size: 2rem;
+    color: white;
+    font-family: rocksalt;
+    line-height: 18.5rem;
+    position: relative;
+    display: inline-block;
+    left: 5rem;
+    top:2rem;
+}
+
+/* MENU SECTION --------------------------------------------------------------- */
+
+/*arabic mosaic background down here*/
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 26.1rem 28.1rem 26.1rem;
+    grid-template-areas: "left middle right";
+    margin-left: 2rem;
+    position: absolute;
+    top:40rem;
+    z-index: -1;
+ }
+
+ .left{
+     justify-self: start;
+ }
+
+ .middle{
+     justify-self: center;
+ }
+ .right{
+     justify-self: right;
+ }
+
+ /*Menu Cards - using flex box*/ 
+ .menu{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content:  space-around;
+     position: absolute;
+     top:850px;
+ }
+
+ .card{
+     display: flex;
+     background-color: var(--color-grey);
+     width: 650px;
+     height: 310px;
+     border-radius: 63px;
+     justify-content: space-around;
+     margin-bottom: 50px;
+     box-shadow: 0px 5px 10px grey;
+ }
+
+.arrow{
+    background-image: url(/elements/arrow.png);
+    width: 132px;
+    height: 66px;
+    position: absolute;
+    margin-top: 15px;
+    transform: rotate(15deg);
+}
+
+ .photo{
+     background-image: url(/img/kibbe.jpg);
+     height: 283px;
+     width: 283px;
+     border-radius: 50%;
+     background-size: cover;
+     align-self: center;
+ }
+ .photo-A{
+    background-image: url(/img/pizza.jpg);
+    width: 283px;
+    border-radius: 50%;
+    background-size: cover;
+    height: 283px;
+    align-self: center;
+}
+.photo-B{
+    background-image: url(/img/tabaquitos.jpg);
+    width: 283px;
+    border-radius: 50%;
+    background-size: cover;
+    height: 283px;
+    align-self: center;
+}
+.photo-C{
+    background-image: url(/img/garbanzo.jpg);
+    width: 283px;
+    border-radius: 50%;
+    background-size: cover;
+    height: 283px;
+    align-self: center;
+}
+.photo-D{
+    background-image: url(/img/shawarma01.jpg);
+    width: 283px;
+    border-radius: 50%;
+    background-size: cover;
+    height: 283px;
+    align-self: center;
+}
+.photo-E{
+    background-image: url(/img/Shawarma02.png);
+    width: 283px;
+    height: 283px;
+    align-self: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+
+ .content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 309px;
+     height: 168px;
+     align-self: center;
+ }
+
+ .content p{
+     font-family: jacques;
+     font-size:1.25rem;
+     color: var(--color-mainbrand);
+     margin-bottom: .5rem;
+ }
+
+ .content h2{
+     font-family: raleway;
+     font-size: 3rem;
+     color: var(--color-mainbrand);
+     text-transform: uppercase;
+     margin-bottom: .5rem;
+ }
+
+ /* CONTACTS SECTION------------------------------------------------- */
+
+ .wrapper-2{
+    display: grid;
+    grid-template-columns: 26.1rem 28.1rem 26.1rem;
+    grid-template-areas: "left middle right";
+    margin-left: 2rem;
+    position: absolute;
+    top:1300px;
+    z-index: -1;
+ }
+
+ .banner-contactos{
+     background-image: url(/elements/Contacto-banner.png);
+     width: 100vw;
+     max-width: 100%;
+     height: 301.56px;
+     position: absolute;
+     top: 2000px;
+ }
+
+.banner-contactos p{
+    font-size: 2rem;
+    color: white;
+    font-family: rocksalt;
+    line-height: 18.5rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    left: 5rem;
+    top:4rem;
+}
+
+.container{
+    width: 584px;
+    height: 379px;
+    position: absolute;
+    top: 2350px;
+    left: 60px;
+    background-color: var(--color-grey);
+    border-radius: 65px;
+    box-shadow: 0rem 1rem 2rem rgb(0, 0, 0, 0.5);
+}
+
+
+.datos{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 584px;
+    height: 250px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.whatsapp-icon{
+    width: 50px;
+    height: 50px;
+    background-image: url(/elements/whatsapp-icon.svg);
+    align-self: center;
+}
+
+.gmail-icon{
+    width: 50px;
+    height: 50px;
+    background-image: url(/elements/gmail-icon.png);
+    align-self: center;
+}
+
+.datos p{
+    font-family: roboto;
+    color: var(--color-mainbrand);
+    font-size: 2rem;
+    align-self: center;
+}
+
+.boton-info{
+    width: 360px;
+    height: 60px;
+    position: absolute;
+    top: 2630px;
+    left: 170px;
+    background-color: #E19956;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    -webkit-text-stroke: 3px red;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+
+.shawarma-hand{
+    width: 120px;
+    height: 194px;
+    background-image: url(/elements/shawarma_hand.png);
+    position: absolute;
+    top: 2550px;
+    left: 120px;
+
+}
+.shawarma-girl-2{
+    width: 301px;
+    height: 318px;
+    position: absolute;
+    top:2520px;
+    left: 700px;
+    background-image: url(/img/Shawarma_girl2.png);
+    background-size: cover;
+    transform: rotate(-11deg);
+    z-index: -1;
+}
+
+/* FOOTER SECTION ----------------------------------------- */
+
+.footer-banner{
+    width: 100vw;
+    max-width: 100%;
+    height: 320px;
+    background-image: url(/elements/footer.png);
+    position: absolute;
+    top:2590px;
+    z-index: -1;
+}
+
+.footer-text{
+    width: 280px;
+    height: 234px;
+    position: absolute;
+    top: 2350px;
+    left: 880px;
+    font-family: roboto;
+    font-size: 1.25rem;
+    color:var(--color-mainbrand)
+}
+
+.footer-hashtag{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #E19956;
+    font-weight: 1000;
+    position: absolute;
+    top: 2740px;
+    left: 875px;
+    width: 430px;
+    height: 50px;
+    -webkit-text-stroke: 3px var(--color-mainbrand);
+    transform: rotate(-30deg);
+}
+
+.footer-data{
+    position: absolute;
+    top:2800px;
+    left: 50px;
+    display: grid;
+    width: 700px;
+    height: 97px;
+
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-gap: 1.5rem; 
+}
+
+.instagram-icon{
+    background-image: url(/elements/iconmonstr-instagram-6\ 1.png);
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    cursor: pointer;
+
+}
+
+.facebook-icon{
+    background-image: url(/elements/iconmonstr-facebook-6\ 1.png);
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    cursor: pointer;
+
+}
+
+.twitter-icon{
+    background-image: url(/elements/iconmonstr-twitter-3\ 1.png);
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    cursor: pointer;
+
+}
+
+.copyright{
+    color: white;
+    font-family: roboto;
+    grid-column: 1 / span 4;
+    align-self: center;
+}
+
+.footer-data p{
+
+    color:#ACABAB;
+    font-family: roboto;
+}
+
+.avisos-legales{
+    grid-column: 5 / span 3;
+    grid-row:1 / 3;
+}
+
+.sobre-nosotros{
+    grid-column:8 /span 3 ;
+    grid-row: 1 / 3;    
+}
+
