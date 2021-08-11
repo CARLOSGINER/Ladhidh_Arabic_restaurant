@@ -2,23 +2,23 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(/fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
     font-family: rocksalt;
-    src: url(/fonts/RockSalt-Regular.ttf);
+    src: url(../fonts/RockSalt-Regular.ttf);
 }
 @font-face {
     font-family: worksans;
-    src: url(/fonts/WorkSans-Regular.ttf);
+    src: url(../fonts/WorkSans-Regular.ttf);
 }
 @font-face {
     font-family: jacques;
-    src: url(/fonts/JacquesFrancois-Regular.ttf);
+    src: url(../fonts/JacquesFrancois-Regular.ttf);
 }
 @font-face {
     font-family: raleway;
-    src: url(/fonts/Raleway-ExtraBold.ttf);
+    src: url(../fonts/Raleway-ExtraBold.ttf);
 }
 
 *{
